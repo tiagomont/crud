@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="shortcut icon" type="image/icon-x" href="src/favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles//media-query.css">
+</head>
+<body>
+	<main>
+		<section>
+			<div id="imagem">
+			</div>
+			<div id="formulario">
+				<h1>Login</h1>
+				<p>
+					Seja bem-vindo(a). Faça seu cadastro inserindo seus dados.
+				</p>
+				<form action="cadastro.php" method="post" autocomplete="on">
+					<div id="div-email" class="data">
+					  <label for="email">
+					  	<span class="material-symbols-outlined">mail</span>
+					  </label>
+						<input type="email" name="email" id="email" required placeholder="Seu e-mail" autocomplete="email">
+					</div>
+					<div id="div-senha" class="data">
+					  <label for="senha">
+					  	<span class="material-symbols-rounded">key</span>
+					  </label>
+						<input type="password" name="senha" id="senha" required minlength="5" placeholder="Sua senha" autocomplete="current-password">
+					</div>
+					<input id="enter" class="btn" type="submit" value="Cadastrar">
+					<a href="esqueci.html" target="_blank" class="btn" id="forgot">Lista de Usuários</a>
+				</form>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

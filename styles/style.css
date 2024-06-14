@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	background: #5f2c82;
+}
+
+main {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: #5f2c82;
+}
+
+section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	height: 515px;
+	width: 260px;
+	background: white;
+	margin: auto;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.490);
+	transition: width 0.3s, height 0.3s;
+	transition-timing-function: ease;
+	transform: translate(-50%, -50%);
+}
+
+#imagem {
+	background: url(../src/metal.jpg) bottom left/cover;
+	height: 40%;
+	margin: -10px -10px 10px -10px;
+	border-radius: 10px 10px 0px 0px ;
+}
+
+#formulario h1 {
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+#formulario p {
+	margin-bottom: 10px;
+	font-size: 0.8em;
+}
+
+.data {
+  position: relative;
+  background: #5f2c82;
+  text-align: right;
+  padding: 4px 4px 1px 0;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.data input {
+  border-radius: 8px;
+  height: 40px;
+  background: #99d4d4;
+  border: 0px;
+  text-indent: 5px;
+  width: 80%;
+}
+
+.data input:focus {
+	background: white;
+	border: 1px solid black;
+	outline: 1px solid white;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: white;
+  transform: translateY(-50%);
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 30px;
+  background: #53aaa7;
+}
+
+.btn:hover {
+	cursor: pointer;
+    transition: 0.3s;
+}
+
+#enter {
+  color: white;
+}
+
+#enter:hover {
+	background: #327e7c;
+}
+
+#forgot {
+  background: white;
+  border: 1px solid #48a7a5fe;
+  color: #2d6462;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#forgot:hover {
+	background: #6cd3cf;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  font-size: 1.1em;
+}
